@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FavouriteMeal</string>
+    <string name="delete">delete</string>
+    <string name="my_favourite_meal">My Favourite Meal</string>
+    <string name="restaruant">restaruant</string>
+    <string name="meal_image">meal image</string>
+    <string name="img">img</string>
+    <string name="admobid">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="unitid">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="copyright">Copyright Udacity 2019</string>
+</resources>
