@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "762138904143",
+    "firebase_url": "https://favouritemeal-da5c4.firebaseio.com",
+    "project_id": "favouritemeal-da5c4",
+    "storage_bucket": "favouritemeal-da5c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762138904143:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762138904143-s59fst0ghg07e6osdm8okn59qr4tghdg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "bc514cc118d2b75423d95debffa288da921320d3"
+          }
+        },
+        {
+          "client_id": "762138904143-qnov8iqorr1kuopa4vnbtqp278mnd21o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcPIiYWOQxorTwPi09VXEsoDmWsvKoin0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762138904143-qnov8iqorr1kuopa4vnbtqp278mnd21o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
