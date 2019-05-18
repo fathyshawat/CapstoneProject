@@ -43,6 +43,7 @@
             android:layout_height="75dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
+            android:contentDescription="@string/add_image"
             android:src="@drawable/add" />
 
         <ImageView
@@ -51,6 +52,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
+            android:contentDescription="@string/meal_image"
             android:maxHeight="300dp"
             android:visibility="gone" />
 
@@ -74,8 +76,9 @@
             android:background="@drawable/bg_buuton"
             android:elevation="4dp"
             android:stateListAnimator="@null"
-            android:text="Post"
-            android:textColor="@color/white" />
+            android:text="@string/post"
+            android:textColor="@color/white"
+            android:contentDescription="@string/post_meal"/>
 
 
     </LinearLayout>

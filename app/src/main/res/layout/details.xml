@@ -98,6 +98,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_margin="10dp"
+                        android:contentDescription="@string/like"
                         android:src="@drawable/unlike" />
 
                     <ImageView
@@ -107,6 +108,7 @@
                         android:layout_margin="10dp"
                         android:layout_toStartOf="@id/like"
                         android:layout_toLeftOf="@id/like"
+                        android:contentDescription="@string/my_favourite_meal"
                         android:src="@drawable/donation" />
                 </RelativeLayout>
 
