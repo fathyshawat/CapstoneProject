@@ -15,19 +15,19 @@
             style="@style/edittext"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/cairo_regular"
-            android:hint="Resturant Name" />
+            android:hint="@string/resturant_name" />
 
         <EditText
             android:id="@+id/meal_name"
             style="@style/edittext"
             android:fontFamily="@font/cairo_regular"
-            android:hint="Meal Name" />
+            android:hint="@string/meal_name" />
 
         <EditText
             android:id="@+id/address"
             style="@style/edittext"
             android:fontFamily="@font/cairo_regular"
-            android:hint="Address" />
+            android:hint="@string/address" />
 
         <EditText
             android:id="@+id/detail"
@@ -35,7 +35,7 @@
             android:layout_height="100dp"
             android:fontFamily="@font/cairo_regular"
             android:gravity="top"
-            android:hint="Details Of Its Meal" />
+            android:hint="@string/details_of_its_meal" />
 
         <ImageView
             android:id="@+id/add_image"

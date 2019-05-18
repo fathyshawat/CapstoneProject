@@ -14,4 +14,8 @@
     <string name="no_favourite_list_avaliable">No Favourite List Avaliable</string>
     <string name="appwidget_text">The Last Meal</string>
     <string name="add_widget">Add widget</string>
+    <string name="resturant_name">Resturant Name</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="address">Address</string>
+    <string name="details_of_its_meal">Details Of Its Meal</string>
 </resources>

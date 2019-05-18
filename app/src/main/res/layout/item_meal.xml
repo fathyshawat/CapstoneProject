@@ -44,7 +44,6 @@
             android:layout_toEndOf="@id/img"
             android:layout_toRightOf="@id/img"
             android:fontFamily="@font/cairo_bold"
-            android:text="Pizza hot"
             android:transitionName="@string/restaruant" />
 
         <TextView
@@ -54,7 +53,6 @@
             android:layout_toEndOf="@id/img"
             android:layout_toRightOf="@id/img"
             android:fontFamily="@font/cairo_regular"
-            android:text="Pizza margiritta"
             android:textSize="15sp" />
 
         <TextView
@@ -64,7 +62,6 @@
             android:layout_toEndOf="@id/img"
             android:layout_toRightOf="@id/img"
             android:fontFamily="@font/cairo_regular"
-            android:text="90 st , Miami , Usa"
             android:textSize="15sp" />
 
         <TextView
@@ -76,7 +73,6 @@
             android:layout_toRightOf="@id/img"
             android:fontFamily="@font/cairo_regular"
             android:maxLines="1"
-            android:text="this is meal is very delicious ......."
             android:textColor="@color/gray"
             android:textSize="13sp" />
 
