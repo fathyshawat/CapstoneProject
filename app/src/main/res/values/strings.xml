@@ -8,4 +8,10 @@
     <string name="admobid">ca-app-pub-3940256099942544~3347511713</string>
     <string name="unitid">ca-app-pub-3940256099942544/6300978111</string>
     <string name="copyright">Copyright Udacity 2019</string>
+    <string name="fail">Fail</string>
+    <string name="blanks">Fill All Blanks</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="no_favourite_list_avaliable">No Favourite List Avaliable</string>
+    <string name="appwidget_text">The Last Meal</string>
+    <string name="add_widget">Add widget</string>
 </resources>

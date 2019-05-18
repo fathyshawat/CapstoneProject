@@ -24,6 +24,7 @@
 
 
             <ImageView
+                android:id="@+id/img"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
                 android:contentDescription="@string/meal_image"
@@ -38,6 +39,7 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
                 <TextView
+                    android:id="@+id/restu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/cairo_bold"
@@ -71,16 +73,45 @@
                 android:orientation="vertical"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/cairo_bold"
-                    android:text="Pizza margiritta"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/meal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="Pizza margiritta"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/like"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/unlike" />
+
+                    <ImageView
+                        android:id="@+id/fav_list"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_toStartOf="@id/like"
+                        android:layout_toLeftOf="@id/like"
+                        android:src="@drawable/donation" />
+                </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -91,6 +122,7 @@
                     android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"

@@ -19,7 +19,7 @@ public class Splash extends AppCompatActivity {
         EasySplashScreen config = new EasySplashScreen(this)
                 .withFullScreen()
                 .withTargetActivity(MainActivity.class)
-                .withSplashTimeOut(4000)
+                .withSplashTimeOut(2000)
                 .withBackgroundResource(android.R.color.holo_green_light)
                 .withFooterText(getString(R.string.copyright))
                 .withHeaderText(getString(R.string.app_name))
