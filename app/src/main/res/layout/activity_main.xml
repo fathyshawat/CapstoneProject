@@ -78,7 +78,7 @@
         android:layout_marginBottom="16dp"
         android:elevation="6dp"
         android:src="@drawable/add"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@color/g"
         android:contentDescription="@string/add_new_meal"
         app:borderWidth="0dp" />
 

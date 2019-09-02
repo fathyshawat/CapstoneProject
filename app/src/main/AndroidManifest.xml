@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".StartApplication"
         android:allowBackup="true"
         android:icon="@drawable/fried"
         android:label="@string/app_name"
@@ -13,8 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
+            android:name=".service.AddMealService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
             android:name=".UpdateWidget"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <receiver android:name=".AppWidget">
             <intent-filter>
@@ -30,19 +35,27 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admobid" />
 
-        <activity android:name=".Activities.AddMeal" />
+        <activity android:name=".Activities.AddMeal">
+
+        </activity>
         <activity android:name=".Activities.MainActivity" />
         <activity
             android:name=".Activities.Details"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".Activities.Splash">
+
+        </activity>
+        <activity android:name=".Activities.SignUp.SignUp">
+
+        </activity>
+        <activity android:name=".Activities.Favourite" />
+        <activity android:name=".Activities.SignIn.SignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.Favourite" />
     </application>
 
 </manifest>

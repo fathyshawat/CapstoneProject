@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/white"
     android:fillViewport="true">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/rest_name"
-            style="@style/edittext"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/cairo_regular"
-            android:hint="@string/resturant_name" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:errorEnabled="true">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/edittext"
+                android:hint="@string/resturant_name"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/meal_name"
-            style="@style/edittext"
-            android:fontFamily="@font/cairo_regular"
-            android:hint="@string/meal_name" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:errorEnabled="true">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/edittext"
+                android:hint="@string/meal_name"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/address"
-            style="@style/edittext"
-            android:fontFamily="@font/cairo_regular"
-            android:hint="@string/address" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:errorEnabled="true">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/edittext"
+                android:hint="@string/address"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/detail"
-            style="@style/edittext"
-            android:layout_height="100dp"
-            android:fontFamily="@font/cairo_regular"
-            android:gravity="top"
-            android:hint="@string/details_of_its_meal" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/edittext"
+                android:hint="@string/details_of_its_meal"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <ImageView
             android:id="@+id/add_image"
@@ -56,17 +88,9 @@
             android:maxHeight="300dp"
             android:visibility="gone" />
 
-        <ProgressBar
-            android:id="@+id/progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
 
-            />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/post"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,12 +98,18 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/bg_buuton"
+            android:contentDescription="@string/post_meal"
             android:elevation="4dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:backgroundTint="@color/colorPrimary"
             android:stateListAnimator="@null"
             android:text="@string/post"
-            android:textColor="@color/white"
-            android:contentDescription="@string/post_meal"/>
-
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </ScrollView>

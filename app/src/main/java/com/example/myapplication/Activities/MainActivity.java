@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddMeal.class);
         startActivity(intent);
     }
-
     @BindView(R.id.main_recyler)
     RecyclerView mealsRecycler;
     @BindView(R.id.adView)
@@ -61,25 +60,25 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseReference;
     private ValueEventListener valueEventListener;
     private FirebaseAnalytics mFirebaseAnalytics;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         admob();
         data = new ArrayList<>();
         mealsRecycler.setLayoutManager(new LinearLayoutManager(this));
         mDatabaseReference = FirebaseDatabase.getInstance().getReference("meals");
+        mDatabaseReference.keepSynced(true);
+
         valueEventListener = mDatabaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 data.clear();
                 for (DataSnapshot post : dataSnapshot.getChildren()) {
                     MealModel mealModel = post.getValue(MealModel.class);
-                    data.add(mealModel);
+                    data.add(0,mealModel);
                 }
                 if (data.size() == 0) {
                     progressBar.setVisibility(View.GONE);

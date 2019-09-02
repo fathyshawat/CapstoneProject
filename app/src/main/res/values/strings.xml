@@ -23,4 +23,6 @@
     <string name="like">like</string>
     <string name="post">Post</string>
     <string name="post_meal">post meal</string>
+    <string name="required">this is field is required</string>
+    <string name="re_pass">The Password doesn\'t match</string>
 </resources>
