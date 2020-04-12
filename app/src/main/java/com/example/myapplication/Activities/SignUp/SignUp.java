@@ -39,8 +39,7 @@ public class SignUp extends AppCompatActivity implements MvpSignUp.View {
     TextInputLayout passEd;
     @BindView(R.id.conf_pass)
     TextInputLayout confPassEd;
-    @BindView(R.id.parent1)
-    ScrollView parent;
+
 
     @OnClick(R.id.sign_up)
     void signUp() {
@@ -60,7 +59,7 @@ public class SignUp extends AppCompatActivity implements MvpSignUp.View {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
         ButterKnife.bind(this);
-        Utils.setupUI(parent, SignUp.this);
+        //Utils.setupUI(parent, SignUp.this);
         presenter = new SignUpPresenter(this);
     }
 

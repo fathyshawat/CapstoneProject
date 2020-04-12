@@ -45,7 +45,8 @@
         <activity android:name=".Activities.Splash">
 
         </activity>
-        <activity android:name=".Activities.SignUp.SignUp">
+        <activity android:name=".Activities.SignUp.SignUp"
+            android:windowSoftInputMode="adjustPan">
 
         </activity>
         <activity android:name=".Activities.Favourite" />

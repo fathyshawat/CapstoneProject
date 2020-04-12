@@ -81,7 +81,7 @@ public class AddMeal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_meal);
         ButterKnife.bind(this);
-        Utils.setupUI(linearLayout, AddMeal.this);
+        Utils.hideSoftKeyboard( AddMeal.this);
 
     }
 

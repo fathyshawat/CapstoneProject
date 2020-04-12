@@ -58,7 +58,7 @@ public class SignIn extends AppCompatActivity implements MvpSignIn.View {
         startActivity(intent);
     }
 
-    @OnClick(R.id.sign_up)
+    @OnClick(R.id.skip)
     void skip() {
 
         Intent intent = new Intent(this, MainActivity.class);
@@ -70,7 +70,7 @@ public class SignIn extends AppCompatActivity implements MvpSignIn.View {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin);
         ButterKnife.bind(this);
-        Utils.setupUI(parent, SignIn.this);
+        Utils.hideSoftKeyboard( SignIn.this);
         presenter = new SignInPresenter(this);
     }
 
